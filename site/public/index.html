@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 1 --Ali </title>
+		<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="css/jquery.mobile.css" />
+		<link rel="stylesheet" href="css/todo.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/backbone.js"></script>
+		<!--<script src="js/backbone.localStorage.js"></script>-->
+		<script src="js/iscroll.js"></script>
+		<script src="js/notes.js"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	</head>
+	<body>
+		<div id="main" data-role="page">
+			<!-- --------------------------------------------Start of Header---------------------------------------->
+			<div data-role="header" data-position="fixed" >
+				<h1 style="font-size: 1">To Do List</h1>
+				<a id="hideTaskList" data-icon="" class="ui-btn-right" data-inline="true">Hide Tasks</a>
+				<a id="add" data-icon="plus" class="ui-btn-left" data-inline="true">Add</a>
+				<a  id="close" data-icon="" class="ui-btn-right" data-inline="" >Show Tasks</a>
+			</div>
+			<!-----------------------------------------------------------------------------------------End of Header--->
+			<!----------------------------------------- Start of Content--------------------------------------- -->
+			<div data-role="content">
+				<div></div>
+				<!----------------------Start of Add Item---------------------->
+				<div id="addItem">
+					<h1 style="font-style: italic">Personal Notes</h1>
+					<textarea rows="250" cols="500" id="itemName"></textarea>
+					<a id="item" data-role="button" class="ui-btn-left" data-inline="true">Save</a>
+				</div>
+				<!-- ------------------------------------------End of Add Item---->
+				<!-- -------------------Start of Edit Item------------------------>
+				<div id="updateItem">
+					<h1>Edit Item</h1>
+					<input type="text" id="uitemName" placeholder="itemName">
+					<a id="uitem" data-role="button" class="ui-btn-left" data-inline="true">Update Item</a>
+				</div>
+				<!--------------------------------------------End of Edit Item---->
+				<!----------------------Show List items--------------------------->
+
+				<div id="wrapper">
+					<div id="scroll-content">
+						<ul id="list" data-role="listview">
+							<li class="tm">
+								<textarea rows="4" cols="25" readonly="true">{{-text}}</textarea>
+								<code id="loc"  name="{{-id}}" href="#">
+									location:
+								</code>
+								<div id="geoloc">
+									{{-location}}
+								</div>
+								<!--<a id="ditem" name="{{-id}}" href="#"> delete item </a><br>-->
+								<button id="ditem" name="{{-id}}"  data-inline= "true" href="#" style="width:50; height:50 ">
+									Delete
+								</button>
+								<button id="eitem" name="{{-id}}" data-inline= "true"  href="#" style="width:50;height:50">
+									Edit item
+								</button>
+								</span>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<!--------------------------------------------End of Show List Items---->
+
+			</div>
+			<div id="myPic">
+				<img style="width: 288px; height: 390px" src="css/images/ali.jpg" />
+			</div>
+			<!----------------------------------------------------------------------End of Content--------------------------->
+		</div>
+	</body>
+	<!----------------------------Javascript for iscroll--------------------->
+	<script type="text/javascript" src="iscroll-lite.js"></script>
+	<script type="text/javascript">
+		var theScroll;
+		function scroll() {
+			theScroll = new iScroll('wrapper');
+		}
+
+
+		document.addEventListener('DOMContentLoaded', scroll, false);
+	</script>
+	<!--------------------------------------------End of Edit javascript code---->
+</html>

@@ -1,0 +1,33 @@
+.tm {
+	display: none;
+}
+div[data-role='content'] {
+	overflow: hidden;
+	position: fixed;
+	top: 40px;
+	bottom: -60px;
+	left: 0px;
+	right: 0px;
+}
+#addItem {
+	display: none;
+	margin-bottom: 10px;
+}
+#hideTaskList {
+	display: none;
+	margin-bottom: 10px;
+}
+#deleteItem {
+	display: none;
+	margin-bottom: 10px;
+}
+#updateItem {
+	display: none;
+	margin-bottom: 10px;
+}
+#close {
+	font-family: "Arial Narrow";
+	font-size: 12px;
+	margin-bottom: 20;
+	border: 200;
+}

@@ -1,0 +1,51 @@
+
+
+--show tasks
+
+<div data-role="content">
+                <a id="showTask" data-role="button" href="#page1">
+                    Show Tasks
+                </a>               
+            </div>
+
+--image
+
+ <div style="">
+                    <img style="width: 288px; height: 390px" src="css/images/ali.jpg" />
+                </div>
+                
+                
+                ---head
+                <head>
+        <meta charset="utf-8" />
+        <title>
+        </title>
+        <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="css/jquery.mobile.css" />
+		<link rel="stylesheet" href="css/todo.css" />
+        <script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/backbone.js"></script>
+        <script src="js/notes.js">
+        <style>
+            /* App custom styles */
+        </style>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		        
+        </script>
+    </head>
+    
+    
+    
+    alert("this is my test point")
+    
+    
+    <div id="wrapper">
+	<div id="scroller">
+		
+	</div>
+</div>
+    
+    
